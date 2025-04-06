@@ -1,0 +1,11 @@
+apiVersion: kubernello.kubernello.eu/v1beta1
+kind: Application
+metadata:
+  labels:
+    app.kubernetes.io/name: kubernello-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: application-sample
+spec:
+  image: nginx:latest
+  port: 80
+  host: www.kubernello.eu

@@ -1,0 +1,9 @@
+apiVersion: kubernello.kubernello.eu/v1beta1
+kind: Application
+metadata:
+  name: nginx
+  namespace: default
+spec:
+  image: nginx:latest
+  port: 80
+  host: www.kubernello.eu
